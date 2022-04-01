@@ -16,7 +16,7 @@ public class Plat {
     private String image_plat;
     private String description;
     private String ingredients;
-    private int prix_plat;
+    private Integer prix_plat;
     private Boolean supprimer=false;
     @Enumerated
     private Etat etat=Etat.Activer;
@@ -33,7 +33,7 @@ public class Plat {
 
     public Plat() {}
 
-    public Plat(String nom_plat, String image_plat, String description,Etat etat ,Boolean supprimer,int prix_plat) {
+    public Plat(String nom_plat, String image_plat, String description,Etat etat ,Boolean supprimer,Integer prix_plat) {
         this.nom_plat = nom_plat;
         this.image_plat = image_plat;
         this.description = description;
@@ -76,9 +76,11 @@ public class Plat {
         this.description = description;
     }
 
-    public int getPrix_plat() {return prix_plat;}
+    public Integer getPrix_plat() {
+        return prix_plat;
+    }
 
-    public void setPrix_plat(int prix_plat) {
+    public void setPrix_plat(Integer prix_plat) {
         this.prix_plat = prix_plat;
     }
 
